@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100vh;
+  background: hsl(30deg, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7rem;
+  background: hsl(0deg, 0%, 100%);
+  width: 92vw;
+  max-width: 25rem;
+}
+
+.perfum-img {
+  width: 100%;
+  border-radius: 0.7rem 0.7rem 0 0;
+  margin-bottom: 1.4rem;
+}
+
+.content {
+  padding: 0 1.3rem;
+}
+
+small {
+  color: hsl(228deg, 12%, 48%);
+  letter-spacing: 0.4rem;
+}
+
+.content h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.content p {
+  color: hsl(228deg, 12%, 48%);
+  line-height: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  padding: 0 1.3rem;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.green-price {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: hsl(158deg, 36%, 37%);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.6rem;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: hsl(158deg, 36%, 15%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 0.7rem;
+  width: 100vw;
+  background: hsl(158deg, 36%, 37%);
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(30deg, 38%, 92%);
+}
+footer a:hover {
+  text-decoration: underline;
+  color: hsl(158deg, 36%, 15%);
+}
+
+@media screen and (min-width: 1040px) {
+  .container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .container .perfum-img {
+    height: 100%;
+  }
+  .container small {
+    font-size: 0.7rem;
+  }
+  .container img {
+    border-radius: 0.7rem 0 0 0.7rem;
+  }
+  .all-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 0.8rem;
+    background: hsl(0deg, 0%, 100%);
+    width: 280px;
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+  button {
+    margin: 0;
+    width: 85%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

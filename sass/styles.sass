@@ -1,0 +1,142 @@
+@use 'global'
+@use 'variables'
+
+.container
+    display: flex
+    flex-direction: column
+    border-radius: .7rem
+    background: variables.$white
+    width: 92vw
+    max-width: 25rem
+
+.perfum-img
+    width: 100%
+    border-radius: .7rem .7rem 0 0
+    margin-bottom: 1.4rem
+
+.content 
+    padding: 0 1.3rem
+
+small
+    color: variables.$dark-grayish-blue
+    letter-spacing: .4rem
+    
+.content h1
+    font-family: variables.$fraunces-font
+    font-size: 2rem
+    margin-top: .6rem
+    margin-bottom: 1rem
+    line-height: 2rem
+
+.content p
+    color: variables.$dark-grayish-blue
+    line-height: 1.5rem
+    margin-bottom: 1.3rem
+
+.prices
+    display: flex
+    align-items: center
+    padding: 0 1.3rem
+    gap: 1rem
+    margin-bottom: 1.2rem
+
+.green-price
+    color: variables.$dark-cyan
+    font-family: variables.$fraunces-font
+    font-size: 2rem
+    font-weight: 700
+
+.price
+    color: variables.$dark-grayish-blue
+    text-decoration: line-through
+    font-size: .8rem
+
+.button
+    display: flex
+    justify-content: center
+
+button
+    background: variables.$dark-cyan
+    font-weight: 700
+    font-size: .9rem
+    border: none
+    border-radius: .6rem
+    color: variables.$white
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: .8rem
+    padding: 1rem
+    margin-bottom: 1.5rem
+    width: 90%
+    cursor: pointer
+    transition: background .3s
+
+    &:hover
+        background: variables.$dark-cyan-hover
+
+footer
+    position: fixed
+    bottom: 0
+    font-size: .7rem
+    width: 100vw
+    background: variables.$dark-cyan
+    text-align: center
+    color: variables.$white
+    padding: 0 1rem
+
+footer a
+    text-decoration: none
+    color: variables.$cream
+
+    &:hover
+        text-decoration: underline
+        color: variables.$dark-cyan-hover
+
+@media screen and ( min-width: 1040px ) 
+    .container
+        display: grid
+        grid-template-columns: 70% 30%
+
+        .perfum-img
+            height: 100%
+
+        small
+            font-size: .7rem
+
+        img
+            border-radius: .7rem 0 0 .7rem
+
+    .all-content
+        display: flex
+        flex-direction: column
+        padding: 1.8rem .8rem
+        background: variables.$white
+        width: 280px
+        border-radius: 0 .7rem .7rem 0
+
+    button
+        margin: 0
+        width: 85%
+
+    
+
+
+    
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+
+    
+
